@@ -47,13 +47,6 @@ if n == 2:
         return coefficient, var, constants
 
 
-    def toInt(l1: list):
-        x1 = []
-        for i in l1:
-            x1.append(int(i))
-        return x1
-
-
     def balance(coefflist: list[int], varlist: list[str]) -> (list, list):
         if "x" not in varlist or "y" not in varlist:  # For absent numbers
             print("missing elements!")
@@ -85,14 +78,14 @@ if n == 2:
 
 
     coeff1, var1, const1 = separate(eq1)
-    coeff1 = toInt(coeff1)
+    coeff1 = [int(x) for x in coeff1]
     coeff1, var1 = balance(coeff1, var1)
-    const1 = toInt(const1)
+    const1 = [int(x) for x in const1]
 
     coeff2, var2, const2 = separate(eq2)
-    coeff2 = toInt(coeff2)
+    coeff2 = [int(x) for x in coeff2]
     coeff2, var2 = balance(coeff2, var2)
-    const2 = toInt(const2)
+    const2 = [int(x) for x in const2]
 
     matrix = np.array([coeff1, coeff2])
     print("\nThe matrix will be:\n", matrix)
@@ -158,13 +151,6 @@ elif n == 3:
         return coefficient, var, constants
 
 
-    def toInt(l1: list):
-        x1 = []
-        for i in l1:
-            x1.append(int(i))
-        return x1
-
-
     def balance(coefflist: list[int], varlist: list[str]) -> (list, list):
         if "x" not in varlist or "y" not in varlist or "z" not in varlist:  # For absent numbers
             print("missing elements!")
@@ -204,19 +190,19 @@ elif n == 3:
 
 
     coeff1, var1, const1 = separate(eq1)
-    coeff1 = toInt(coeff1)
+    coeff1 = [int(x) for x in coeff1]
     coeff1, var1 = balance(coeff1, var1)
-    const1 = toInt(const1)
+    const1 = [int(x) for x in const1]
 
     coeff2, var2, const2 = separate(eq2)
-    coeff2 = toInt(coeff2)
+    coeff2 = [int(x) for x in coeff2]
     coeff2, var2 = balance(coeff2, var2)
-    const2 = toInt(const2)
+    const2 = [int(x) for x in const2]
 
     coeff3, var3, const3 = separate(eq3)
-    coeff3 = toInt(coeff3)
+    coeff3 = [int(x) for x in coeff3]
     coeff3, var3 = balance(coeff3, var3)
-    const3 = toInt(const3)
+    const3 = [int(x) for x in const3]
 
     matrix = np.array([coeff1, coeff2, coeff3])
     print("\nThe matrix will be:\n", matrix)
