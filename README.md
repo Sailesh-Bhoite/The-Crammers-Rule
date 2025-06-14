@@ -27,9 +27,9 @@ This is a Python implementation of **Cramer's Rule** to solve systems of linear 
 
 This script can be used to solve equations of two or three variables. You just need to input coefficients and constants, and the program handles the rest.
 
-'''bash
+```console
 python cramers_rule.py
-'''
+```
 
 ## Authors
 
