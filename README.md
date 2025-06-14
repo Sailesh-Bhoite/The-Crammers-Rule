@@ -21,6 +21,8 @@ This script can be used to solve equations of two or three variables. You just n
 python cramers_rule.py
 ```
 
+[Click Here](https://www.linkedin.com/posts/sailesh-bhoite_i-was-just-wondering-how-could-be-solving-activity-7296687229521793025-_ewe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgWZHsBTswwPEbC-Z3cAWUiezWgCnj6xf4) for video demo.
+
 ## Authors
 
 - [@Sailesh Bhoite](https://github.com/Sailesh-Bhoite)
