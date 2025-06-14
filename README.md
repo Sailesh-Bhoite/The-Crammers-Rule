@@ -19,7 +19,7 @@ This script can be used to solve equations of two or three variables. You just n
 
 ```python
 python cramers_rule.py
-
+```
 
 ## Authors
 
